@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   const response = await fetch("https://pakasir.com/api/v1/create-transaction", {
     method: "POST",
     headers: {
-      "Authorization": "Bearer API_KEY_PAKASIR_ANDA",
+      "Authorization": "Bearer 15h296upaagrqL2X3CVBDTC0Lbj5Kebm",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
