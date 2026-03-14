@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   
   if (data.status === 'completed') {
     // 1. Simpan status lunas ke database Vercel KV selama 1 jam
-    await kv.set(`status:${data.order_id}`, 'lunas', { ex: 3600 });
+    await kv.set(`status:${data.order_id}`, 'lunas', { ex: 600 });
 
     // 2. Kirim Notif Telegram
     const BOT_TOKEN = "8597331224:AAFnZ8fuiYeyUKVlypItH1Gutz23PCOMT6Y";
