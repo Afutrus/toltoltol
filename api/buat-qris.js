@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     body: JSON.stringify({
       amount: amount,
       reference: player_id,
-      callback_url: "https://jayaabadi.namadomainmu.com/api/webhook" // URL Tunnel Anda
+      callback_url: "https://composition-discounts-arnold-beside.trycloudflare.com/" // URL Tunnel Anda
     })
   });
 
